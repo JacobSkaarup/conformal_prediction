@@ -1,21 +1,18 @@
 # conformal_prediction
 
-Working repository for a master's thesis on conformal prediction for time-series forecasting.
+Limited repository for a master's thesis on conformal prediction for time-series forecasting in the energy sector
 
-This snapshot contains reusable utilities, model tuning scripts, HPC-oriented experiment runners, and a small notebook example. The code appears to support multiple regression and probabilistic forecasting workflows, including classical conformal prediction, quantile-based methods, Bayesian approaches, and TCN-based pipelines.
+This snapshot contains reusable utilities, model tuning scripts, HPC-oriented experiment runners, and a small notebook example. The code supports multiple regression and probabilistic forecasting workflows, including classical conformal prediction, quantile-based methods, Bayesian approaches, and TCN-based pipelines.
 
 ## Overview
 
-- Thesis topic: [fill in short thesis title]
-- Primary forecasting target(s): [fill in target series or use case]
-- Main datasets: [fill in data sources and time span]
-- Main methods explored: classical CP, QCP, FRR, BART, boosting, k-NN, linear baselines, and TCN variants
-- Current status of this repository snapshot: [fill in what is complete, partial, or experimental]
+- Thesis topic: Conformal prediction in the energy sector for efficient uncertainty estimation
+- Main methods explored: Conformal predictive systems, QCP, BART, boosting, k-NN, linear baselines, and TCN variants
 
 ## Repository Layout
 
 - `src/`: core data loading, metrics, models, conformal prediction, and tuning utilities
-- `hpc/`: larger experiment scripts intended for batch or cluster execution
+- `hpc/`: larger experiment scripts intended for batch or cluster execution on a hpc
 - `toy_example.ipynb`: compact notebook example for quick experimentation
 - `requirements.txt`: Python dependencies for the code in this snapshot
 
@@ -27,16 +24,14 @@ This snapshot contains reusable utilities, model tuning scripts, HPC-oriented ex
 
 ### Environment Notes
 
-- Python version: [fill in]
-- Package manager or environment tool: [fill in]
-- Any HPC or cluster-specific setup: [fill in]
+- Python version: 3.11.14
+- Package manager or environment tool: conda
+
 
 ## Data
 
-- Raw data location: [fill in]
-- Processed data location: [fill in]
-- External API or download steps: [fill in]
-- Data preprocessing assumptions: [fill in]
+- Raw data is confidential
+- An external API call can be made to Energi Data Service for publicly available data
 
 ## Usage
 
@@ -51,30 +46,14 @@ Open `toy_example.ipynb` to run a lightweight example and inspect the core workf
 
 Example entry points:
 
-- [fill in a minimal local script or notebook command]
-- [fill in HPC submission command if applicable]
-
-## Results
-
-- Main thesis findings: [fill in]
-- Best-performing model(s): [fill in]
-- Key evaluation metric(s): [fill in]
-- Calibration or uncertainty findings: [fill in]
-
-## Reproducibility
-
-- Random seeds used: [fill in]
-- Train/calibration/test split policy: [fill in]
-- Hardware assumptions: [fill in]
-- Known limitations of this snapshot: [fill in]
 
 ## Development Notes
 
 - Several scripts are written for long-running experiments and may assume access to local datasets or HPC storage.
 - Some dependencies are only needed for specific model families, so a minimal environment may still work for a subset of the repository.
+- The actual data processing, model parameters and analysis is conducted in notebooks not available here.
 
 ## Contact
 
-- Author: [fill in]
-- Institution or lab: [fill in]
-- Project link or thesis reference: [fill in]
+- Author: Jacob Skaarup and Martha Kofod
+- Institution: DTU, Denmark
